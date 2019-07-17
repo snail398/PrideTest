@@ -42,6 +42,11 @@ namespace GunSpace
                 _canShoot = false;
                 return;
             }
+            if (hit.distance >= 5000)
+            {
+                _canShoot = false;
+                return;
+            }
             _canShoot = true;
         }
 

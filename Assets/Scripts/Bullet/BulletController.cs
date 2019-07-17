@@ -4,10 +4,12 @@ using Pool;
 public class BulletController : MonoBehaviour
 {
     private Rigidbody _rb;
+    private TrailRenderer _trail;
 
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody>();    
+        _rb = GetComponent<Rigidbody>();
+        _trail = GetComponent<TrailRenderer>();
     }
     private void OnEnable()
     {
@@ -17,5 +19,6 @@ public class BulletController : MonoBehaviour
     {
         gameObject.GetComponent<PoolObject>().ReturnToPool();
         PoolManager.GetObject("Explosion", transform.position, Quaternion.identity);
+        _trail.Clear();
     }
 }

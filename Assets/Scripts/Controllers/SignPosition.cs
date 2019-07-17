@@ -27,6 +27,8 @@ namespace Control
             {
                 _signPosition = hit;
             }
+            else
+                _signPosition.distance = 5000;
         }
     }
 }
