@@ -1,0 +1,10 @@
+{
+	"tankForwardSpeed": 2.0,
+    "tankBackSpeed": 1.0,
+    "tankRotateSpeed": 1.0,
+    "cameraDampTime": 0.01,
+    "reloadTime": 0.0,
+    "horizontalAngle": 20,
+    "verticalAngle": 80,
+	"crosshairSize": 40
+}
